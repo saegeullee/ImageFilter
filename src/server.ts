@@ -37,6 +37,11 @@ import { filter } from 'bluebird';
         deleteLocalFiles([results]);
       });
     }
+
+    res.status(400).json({
+      ok: 0,
+      msg: 'image_query is needed'
+    });
   });
 
   //! END @TODO1
